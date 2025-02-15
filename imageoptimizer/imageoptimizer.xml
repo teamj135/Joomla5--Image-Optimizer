@@ -1,0 +1,29 @@
+<extension type="plugin" group="system" method="upgrade" version="5.0">
+    <name>PLG_SYSTEM_IMAGEOPTIMIZER</name>
+    <author>Sanjeev Kumar Raghuwanshi</author>
+    <creationDate>2025-01-05</creationDate>
+    <version>1.0.0</version>
+    <description>PLG_SYSTEM_IMAGEOPTIMIZER_DESC</description>
+    <filename>imageoptimizer.xml</filename>
+
+    <files>
+        <folder>language</folder>
+        <filename plugin="imageoptimizer">imageoptimizer.php</filename>
+    </files>
+
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.plg_system_imageoptimizer.ini</language>
+    </languages>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="enable_cdn" type="radio" label="PLG_SYSTEM_IMAGEOPTIMIZER_ENABLE_CDN" default="0">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field name="cdn_url" type="text" label="PLG_SYSTEM_IMAGEOPTIMIZER_CDN_URL" default="https://your-cdn.com/upload" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
